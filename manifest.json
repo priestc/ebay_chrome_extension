@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+
+  "name": "Ebay Extension",
+  "description": "Better auction ending alerts, show ending time in local timzone",
+  "version": "1.0",
+
+  "content_scripts": [ {
+        "js": ["ebay.js"],
+        "matches": ["*://*.ebay.com/itm/*"]
+  } ],
+  "permissions": [
+    "activeTab",
+    "http://ebay.com/"
+  ]
+}
